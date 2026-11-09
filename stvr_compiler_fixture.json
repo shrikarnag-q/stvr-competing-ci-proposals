@@ -1,0 +1,86 @@
+{
+  "task": "missing source in compiler command",
+  "origin": "locally generated synthetic compiler fixture",
+  "execution": "authored proposals checked in disposable workspaces",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "python": "3.9.6",
+  "fixture_sha256": {
+    "main.c": "834ffa0f6584aadf7ab9277600c631499814b4d08a663299504c988ff74a9bbd",
+    "rate.c": "5bc9e1b428efc9150104f402bdd5dd5fa50011b1cb126c669b5ad045c3784379",
+    "ci.py": "8488ded3a541ef3a9586c227bcc031e34ed3e30787545c052e3a38130d91ecd8"
+  },
+  "expected_output": {
+    "default": "7",
+    "alternate": "11"
+  },
+  "results": {
+    "unmodified": {
+      "visible": {
+        "exit_code": 1,
+        "linked_binary": false,
+        "unresolved_rate": true,
+        "output": "",
+        "passed": false
+      },
+      "withheld": {
+        "exit_code": 1,
+        "linked_binary": false,
+        "unresolved_rate": true,
+        "output": "",
+        "passed": false
+      },
+      "verified": false
+    },
+    "retry": {
+      "visible": {
+        "exit_code": 1,
+        "linked_binary": false,
+        "unresolved_rate": true,
+        "output": "",
+        "passed": false
+      },
+      "withheld": {
+        "exit_code": 1,
+        "linked_binary": false,
+        "unresolved_rate": true,
+        "output": "",
+        "passed": false
+      },
+      "verified": false
+    },
+    "narrow_repair": {
+      "visible": {
+        "exit_code": 0,
+        "linked_binary": true,
+        "unresolved_rate": false,
+        "output": "7",
+        "passed": true
+      },
+      "withheld": {
+        "exit_code": 0,
+        "linked_binary": true,
+        "unresolved_rate": false,
+        "output": "7",
+        "passed": false
+      },
+      "verified": false
+    },
+    "restore_source": {
+      "visible": {
+        "exit_code": 0,
+        "linked_binary": true,
+        "unresolved_rate": false,
+        "output": "7",
+        "passed": true
+      },
+      "withheld": {
+        "exit_code": 0,
+        "linked_binary": true,
+        "unresolved_rate": false,
+        "output": "11",
+        "passed": true
+      },
+      "verified": true
+    }
+  }
+}
